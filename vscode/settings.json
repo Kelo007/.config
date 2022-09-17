@@ -1,0 +1,12 @@
+{
+  "vim.leader": ",",
+  "vim.searchHighlightColor": "#e5c07a",
+  "vim.searchHighlightTextColor": "#282c34",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.enableNeovim": true,
+  "vim.vimrc.path": "$HOME/.vscvimrc",
+  "vim.vimrc.enable": true,
+  "vim.smartRelativeLine": true,
+}

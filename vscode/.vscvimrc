@@ -1,0 +1,56 @@
+inoremap jj <esc>
+noremap <leader>w :w<cr>
+noremap <leader>q :q<cr>
+noremap <leader><space> :noh<cr>
+
+nnoremap q <nop>
+nnoremap m q
+
+noremap VV ggVG
+" moving faster
+noremap J 5j
+noremap K 5k
+noremap H 7h
+noremap L 7l
+
+" clipboard
+noremap Y "+y
+
+" move a line
+" set in keybindings.json
+"nnoremap <alt-j> :vsc editor.action.moveLinesDownAction<cr>
+"nnoremap <alt-k> :vsc editor.action.moveLinesUpAction<cr>
+"vnoremap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+"vnoremap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+" Smart way to move between windows
+" set in keybindings.json
+" noremap <C-j> <C-W>j
+" noremap <C-k> <C-W>k
+" noremap <C-h> <C-W>h
+" noremap <C-l> <C-W>l
+nnoremap sh :vsc workbench.action.splitEditorLeft<cr>
+nnoremap sl :vsc workbench.action.splitEditorRight<cr>
+nnoremap sj :vsc workbench.action.splitEditorDown<cr>
+nnoremap sk :vsc workbench.action.splitEditorUp<cr>
+nnoremap <up> :vsc workbench.action.increaseViewHeight<cr>
+nnoremap <down> :vsc workbench.action.decreaseViewHeight<cr>
+nnoremap <left> :vsc workbench.action.decreaseViewWidth<cr>
+nnoremap <right> :vsc workbench.action.increaseViewWidth<cr>
+
+noremap <leader>t :tabnew<cr>
+noremap <leader>n :tabnext<cr>
+noremap <leader>l :tabnext<cr>
+noremap <leader>p :tabprev<cr>
+noremap <leader>h :tabprev<cr>
+"noremap <leader>c :vsc workbench.action.closeEditorsInGroup<cr>
+noremap <leader>o :vsc workbench.action.closeOtherEditors<cr>
+" set in kerybindings.json
+" noremap <leader>e :vsc workbench.action.focusActiveEditorGroup<cr> 
+
+noremap <leader>/ :vsc editor.action.commentLine<cr>
+noremap <leader>c :vsc editor.action.commentLine<cr>
+
+nnoremap D :vsc editor.action.showHover<cr>
+nnoremap gr :vsc editor.action.goToReferences<cr>
+noremap <leader>rn :vsc editor.action.rename<cr>
