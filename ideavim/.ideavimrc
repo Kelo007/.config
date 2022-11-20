@@ -1,0 +1,54 @@
+set number
+set relativenumber
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set scrolloff=4
+
+let mapleader = " "
+
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+nnoremap <space> <nop>
+
+nnoremap <S-h> <Home>
+nnoremap <S-l> <End>
+xnoremap <S-h> <Home>
+xnoremap <S-l> <End>
+
+nnoremap <A-j> :move .+1<cr>==
+nnoremap <A-k> :move .-2<cr>==
+vnoremap <A-j> :move '>+1<cr>gv=gv
+vnoremap <A-k> :move '<-2<cr>gv=gv
+
+nnoremap ZA :confirm qall<cr>
+
+nnoremap Y "+y
+xnoremap Y "+y
+
+nnoremap <up> :resize +5<cr>
+nnoremap <down> :resize -5<cr>
+nnoremap <left> :vertical resize -5<cr>
+nnoremap <right> :vertical resize +5<cr>
+
+nnoremap Q: q:
+nnoremap Q/ q/
+nnoremap Q? q?
+nnoreamp q: <nop>
+nnoreamp q/ <nop>
+nnoreamp q? <nop>
+
+nnoremap VV ggVG
+
+xnoremap < <gv
+xnoremap > >gv
+
+inoremap jj <esc>
+
+noremap <leader>w :write<cr>
+noremap <leader>q :quit<cr>
+noremap <leader>h :nohls<cr>
+noreamp <leader>e :Lex 30<cr>
