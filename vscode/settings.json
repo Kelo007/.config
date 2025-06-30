@@ -177,6 +177,11 @@
     "backspace",
     "delete"
   ],
+  "remote.SSH.remotePlatform": {
+    "mlu": "linux",
+    "win": "linux",
+    "cpu16": "linux"
+  },
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
     "terminal.integrated.fontSize",
@@ -197,6 +202,13 @@
       "backgroundColor": "theme.editor.findMatchHighlightBackground"
     },
   },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "trae.chatLanguage": "cn",
   "editor.renderFinalNewline": "dimmed",
   "remote.SSH.localServerDownload": "always",
   "editor.glyphMargin": false,
