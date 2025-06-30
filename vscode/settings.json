@@ -1,12 +1,212 @@
 {
-  "vim.leader": ",",
+  "editor.fontSize": 16,
+  "markdown.preview.fontSize": 18,
+  "editor.minimap.autohide": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "cmake.options.statusBarVisibility": "compact",
+  "cmake.showOptionsMovedNotification": false,
+  "diffEditor.renderSideBySide": true,
+  "vim.hlsearch": true,
+  "vim.smartRelativeLine": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "0"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-p>": false,
+    "<C-t>": false
+  },
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape"
+    },
+    "kj": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.wordWrap": "wordWrapColumn",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
+  "vscode-neovim.compositeTimeout": 100,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "0"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    }
+  ],
   "vim.searchHighlightColor": "#e5c07a",
   "vim.searchHighlightTextColor": "#282c34",
-  "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
-  "vim.neovimPath": "/usr/local/bin/nvim",
-  "vim.enableNeovim": true,
-  "vim.vimrc.path": "$HOME/.vscvimrc",
-  "vim.vimrc.enable": true,
-  "vim.smartRelativeLine": true,
+  "remote.SSH.useLocalServer": false,
+  "window.restoreWindows": "none",
+  "python.analysis.typeCheckingMode": "standard",
+  "vscode-neovim.ctrlKeysForNormalMode": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "m",
+    "o",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "/",
+    "]",
+    "right",
+    "left",
+    "up",
+    "down",
+    "backspace",
+    "delete"
+  ],
+  "settingsSync.ignoredSettings": [
+    "editor.fontSize",
+    "terminal.integrated.fontSize",
+    "editor.fontFamily",
+    "editor.lineHeight"
+  ],
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.4,
+  "vscode-neovim.highlightGroups.highlights": {
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground"
+    },
+    "CurSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground"
+    },
+  },
+  "editor.renderFinalNewline": "dimmed",
+  "remote.SSH.localServerDownload": "always",
+  "editor.glyphMargin": false,
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "top",
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.wordWrapColumn": 120,
+  "vscode-neovim.useWSL": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
 }
